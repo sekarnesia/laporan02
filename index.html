@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="filebaru.html"><button onclick="toggleMode()" class="btn btn-outline-primary">Tampilan 2</button></a>
+
+        <h1>LAPORAN TEORI</h1>
+        <h2>Sekar Nesia Humaira | 202331287</h2>
+        <hr>
+
+        <h3 onclick="toggleContent('content1')">Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+        <div id="content1" class="content">
+            <p><strong>Cascading Style Sheet (CSS)</strong><br>
+            Bahasa presentasi yang digunakan untuk mengatur tampilan visual dari halaman web...</p>
+            <p><strong>JavaScript (JS)</strong><br>
+            Bahasa scripting yang populer yang digunakan untuk membuat aplikasi web dinamis...</p>
+        </div>
+
+        <h3 onclick="toggleContent('content2')">Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+        <div id="content2" class="content">
+            <p>HTML, CSS, dan JavaScript biasanya digabungkan untuk membuat halaman web yang dinamis dan interaktif...</p>
+        </div>
+
+        <h3 onclick="toggleContent('content3')">Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h3>
+        <div id="content3" class="content">
+            <p><strong>JavaScript</strong><br>
+            Mudah dipelajari dan dipahami, fleksibel untuk digunakan, beban server lebih ringan...</p>
+            <p><strong>CSS</strong><br>
+            Konsistensi dan gaya global, perawatan lebih mudah dan pembaruan efisien...</p>
+        </div>
+
+        <h3 onclick="toggleContent('content4')">Jelaskan apa saja keuntungan menggunakan Bootstrap?</h3>
+        <div id="content4" class="content">
+            <p>Beberapa kelebihan Bootstrap di antaranya adalah mudah digunakan, memiliki banyak tutorial online...</p>
+        </div>
+
+        <h3 onclick="toggleContent('content5')">Berikan salah satu contoh penggunaan Bootstrap...</h3>
+        <div id="content5" class="content">
+            <p>Contoh penggunaan Bootstrap yang sering digunakan adalah Form dan Input...</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                const confirmHide = confirm("Apakah Anda ingin menyembunyikan konten dari bagian ini?");
+                if (confirmHide) {
+                    content.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

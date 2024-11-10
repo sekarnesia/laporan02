@@ -1,0 +1,48 @@
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+h3 {
+    cursor: pointer;
+    color: #0069d9;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+h3:hover {
+    color: #0056b3;
+    font-family: sans-serif;
+}
+
+.content {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(57, 62, 196); 
+    border: none; 
+}
